@@ -1,0 +1,47 @@
+site_name: ML-OPF Benchmark
+site_url: https://your-username.github.io/ml-opf-bench/
+site_description: ML-OPF 基准测试结果展示平台
+
+# Material 主题配置（学术风格，无额外依赖）
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - content.code.copy
+  font:
+    text: Roboto
+    code: Fira Code
+
+# 仅保留必选插件（无charts，避免报错）
+plugins:
+  - search:          # 搜索功能（MkDocs 原生）
+  - table-reader:    # 读取CSV生成表格（核心需求）
+
+# LaTeX 公式渲染（ML-OPF 必备）
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:  # 支持代码块/图片嵌套
+  - tables:                # 原生表格渲染
+  - attr_list:             # 自定义图片样式
+
+# 公式渲染依赖的 MathJax 脚本
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# 导航栏（按需调整）
+nav:
+  - 首页: index.md
+  - 基准测试设置:
+    - 数据集说明: benchmark/datasets.md
+    - 评价指标: benchmark/metrics.md
+  - 结果展示:
+    - 综合对比: results/comparison.md
+    - 精度分析: results/accuracy.md
+  - 资源下载: resources.md
+  - 参考文献: references.md
