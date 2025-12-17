@@ -1,11 +1,10 @@
-# 资源下载
-本基准测试的所有数据、代码均开源，可通过以下方式获取：
+All datasets and code for this benchmark work are open source and can be obtained through the following methods:
 
-## 1. 数据集
-- IEEE 30/118/300-bus 数据集：[下载链接](https://github.com/你的用户名/ml-opf-bench/raw/main/assets/data/opf_datasets.zip)
-- 预处理脚本：[preprocess_data.py](https://github.com/你的用户名/ml-opf-bench/blob/main/scripts/preprocess_data.py)
+## 1. Datasets
+- IEEE 14/30/118/300-bus datasets：[ACOPF](https://github.com/xinyiliu04/ml-opf-bench/raw/main/assets/ac-data/opf_datasets.zip)
+- IEEE 14/30/118/300-bus datasets：[DCOPF](https://github.com/xinyiliu04/ml-opf-bench/raw/main/assets/dc-data/opf_datasets.zip)
 
-## 2. 代码与模型
-- GitHub 仓库：[ml-opf-bench](https://github.com/你的用户名/ml-opf-bench)
-- 预训练模型权重：[models/](https://github.com/你的用户名/ml-opf-bench/tree/main/assets/models)
-- 复现教程：[REPRODUCE.md](https://github.com/你的用户名/ml-opf-bench/blob/main/docs/REPRODUCE.md)
+## 2. Benchmark algorithms
+- GitHub：[ml-opf-bench](https://github.com/xinyiliu04/ml-opf-bench)
+- Hyper-parameters：[models/](https://github.com/xinyiliu04/ml-opf-bench/tree/main/assets/models)
+- Tutorial：[REPRODUCE.md](https://github.com/xinyiliu04/ml-opf-bench/blob/main/docs/REPRODUCE.md)
